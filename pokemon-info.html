@@ -1,0 +1,26 @@
+<link rel="import" href="../polymer/polymer.html">
+<style>
+	@font-face {
+	  font-family: 'Pokemon Hollow';
+	  src: url('fonts/Pokemon Hollow.eot'); /* IE9 Compat Modes */
+	  src: url('fonts/Pokemon Hollow.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('fonts/Pokemon Hollow.woff') format('woff'), /* Modern Browsers */
+	       url('fonts/Pokemon Hollow.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('fonts/Pokemon Hollow.svg#cd45baf9a25cf6729cc04373d725f094') format('svg'); /* Legacy iOS */
+	       
+	  font-style:   normal;
+	  font-weight:  400;
+	}
+</style>
+<polymer-element name="pokemon-info" attributes="name">
+	<template>
+		<link rel="stylesheet" href="pokemon-info.css">
+		<h2 id="pokemon-name">{{name}}</h2>
+		<img src="http://img.pokemondb.net/artwork/{{name}}.jpg" alt="{{name}}">
+	</template>
+	<script>
+		Polymer('pokemon-info', {
+			name: ''
+		});
+	</script>
+</polymer-element>

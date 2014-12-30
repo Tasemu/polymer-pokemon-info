@@ -1,0 +1,12 @@
+:host {
+	display: inline-block;
+	background: #fff;
+	width: 250px;
+	text-align: center;
+	padding: 25px;
+}
+
+h2 {
+	font-family: 'Pokemon Hollow';
+	text-transform: capitalize;
+}
